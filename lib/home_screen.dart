@@ -1,6 +1,7 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'product_card.dart';
+import 'section_title.dart';
 
 class HomeScreen extends StatelessWidget{
   @override
@@ -74,86 +75,40 @@ class HomeScreen extends StatelessWidget{
                 ),
               ),
             ),
-                 SizedBox(height:10),
-                  Row(
-            mainAxisAlignment:MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Exclusive Offer",style: TextStyle(
-                fontWeight:FontWeight(600),
-                fontSize:20,
-                color:Color(0xff181725),
-              )),
-              Text("See all",
-              style: TextStyle(
-                fontWeight:FontWeight(600),
-                fontSize:16,
-                color:Color(0xff53B175),
-              )),
-            ],
-                  ),
-              SizedBox(height:15),
-              Row(
-                children: [
-                  Container(
-                    width:150,
-                    height:210,
-                    padding:EdgeInsets.all(16),
-                    decoration:BoxDecoration(
-                      border:Border.all(
-                        color:Color(0xffE2E2E2),
-                      ),
-                      borderRadius:BorderRadius.circular(18),
-                    ),
-                    child: Column(
-                      crossAxisAlignment:CrossAxisAlignment.start,
-                      children: [
-                        Image.asset("assets/images/pngfuel 1.png"),
-                        SizedBox(height:15),
-                        Text('Red Apple',style:TextStyle(
-                          fontWeight:FontWeight(400),
-                          fontSize:16,
-                          color:Color(0xff181725),
-                        ),),
-                        Text("1kg, Priceg", style:TextStyle(
-                          fontWeight:FontWeight(400),
-                          fontSize:14,
-                          color:Color(0xff7C7C7C),
-                        ),),
-                     
-                      Row(
-                        mainAxisAlignment:MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("\$4.99",style:TextStyle(
-                            fontWeight:FontWeight.w600,
-                            fontSize:18,
-                            color:Color(0xff181725),
-                          )),
-                            
-                        Container(
-                          padding:EdgeInsets.all(14),
-                          child:Icon(Icons.add,color:Color(0xffFFFFFF)),
-                          decoration:BoxDecoration(
-                            borderRadius:BorderRadius.circular(17),
-                            color:Color(0xff53B175),
-                          ),
-                        ),
-                        
-
-                      
-                        ],
-                      ),
-                    
-                        
+                 SizedBox(height:5),
+          SectionTitle(
+          title: "Exclusive Offer",
+          actionText: "See all",
+          ),
+              SizedBox(height:5),
+  Row(
+  children: [
+    Expanded(
+      child: ProductCard(
+        title: "Red Apple",
+        price: "4.99",
+        imagePath: "assets/images/pngfuel 1.png",
+      ),
+    ),
+    const SizedBox(width: 12), 
+    Expanded(
+      child: ProductCard(
+        title: "Organic Banana",
+        price: "2.99",
+        imagePath: "assets/images/banana.png", 
+      ),
+    ),
+  ],
+),     
+   SectionTitle(
+  title: "Best Selling",
+  actionText: "See all", 
+),  
                       ],
                     ),
                   ),
-                ],
-              ),
-              ],
+              ), 
             ),
-          ),
-        ),
-      ),
-    );
+          );
   }
 }
