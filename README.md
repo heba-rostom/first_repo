@@ -1,17 +1,9 @@
 # grosry
+# screenshots
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#login_screen
+<img width="393" height="837" alt="image" src="https://github.com/user-attachments/assets/22cf7763-4969-473b-9371-c5cb3764eaf8" />
+#registere_screen
+<img width="396" height="831" alt="image" src="https://github.com/user-attachments/assets/63d81053-3fe2-4ce7-903d-09cce33a3b6e" />
+#home_screen
+<img width="395" height="832" alt="image" src="https://github.com/user-attachments/assets/a94f1d43-1872-4278-9a8f-818b8251ffbd" />
